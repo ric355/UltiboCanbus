@@ -16,6 +16,7 @@ Ultibo Canbus Library
   delete that code;
 
 
+  ```Pascal
   var
     MyCanBus : MCP_CAN;
     Res : longword;
@@ -50,10 +51,12 @@ Ultibo Canbus Library
     buf[7] := 7;
 
     // send the above buffer onto the canbus with can id $100, length 8.
+    // note you do not have to send 8 bytes, but you must send at least 1 byte.
     res := FCanBus.sendMsgBuf($100, 8, @buf[0]);
 
     // check res here for CAN_OK
   end.
+  ```
 
   This library will work with the multitude of Arduino SPI canbus boards you
   can buy on eBay for couple of quid. However, when using one of these boards
