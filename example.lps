@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="example.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="70"/>
+        <CursorPos X="17" Y="81"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="canbus.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1265"/>
+        <CursorPos X="7" Y="1286"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="19" Column="70" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="35" Column="11" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="37" Column="11" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="45" Column="11" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="708" Column="15" TopLine="683"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="729" Column="10" TopLine="704"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="750" Column="10" TopLine="725"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="775" Column="10" TopLine="750"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="797" Column="8" TopLine="772"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="824" Column="10" TopLine="799"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="849" Column="10" TopLine="824"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="868" Column="10" TopLine="843"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="1284" Column="9" TopLine="1259"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="1290" Column="7" TopLine="1265"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="1297" Column="9" TopLine="1273"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="19" Column="70"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="35" Column="11" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="37" Column="11" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="45" Column="11" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="713" Column="15" TopLine="683"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="729" Column="10" TopLine="704"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="750" Column="10" TopLine="725"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="775" Column="10" TopLine="750"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="797" Column="8" TopLine="772"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="824" Column="10" TopLine="799"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="849" Column="10" TopLine="824"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="868" Column="10" TopLine="843"/>
+      </Position>
+      <Position>
+        <Filename Value="canbus.pas"/>
+        <Caret Line="1284" Column="9" TopLine="1259"/>
+      </Position>
+      <Position>
+        <Filename Value="example.lpr"/>
+        <Caret Line="33" TopLine="13"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

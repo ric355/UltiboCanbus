@@ -116,6 +116,11 @@ uses
   , BCM2835
   , BCM2708
   {$endif}
+  {$ifdef RPI}
+  , RaspberryPi
+  , BCM2835
+  , BCM2708
+  {$endif}
   {$ifdef ZERO}
   , RaspberryPi
   , BCM2835
@@ -697,9 +702,13 @@ type
 implementation
 
 uses
-  platform,
-  logoutput;
+  platform;
 
+
+procedure log(s : string);
+begin
+  LoggingOutput(s);
+end;
 
 {/*********************************************************************************************************
 ** Function name:           mcp2515_reset
@@ -904,6 +913,9 @@ var
   cfg1, cfg2, cfg3 : INT8U;
   aset : boolean;
 begin
+  cfg1 := 0;
+  cfg2 := 0;
+  cfg3 := 0;
     aset := true;
     case (canClock) of
       MCP_8MHZ:
@@ -1473,8 +1485,6 @@ end;
 procedure MCP_CAN.mcp2515_write_canMsg(buffer_sidh_addr : INT8U);
 var
   mcp_addr : INT8U;
-  logstr : string;
-  i : integer;
 begin
   mcp_addr := buffer_sidh_addr;
   mcp2515_setRegisterS(mcp_addr+5, m_nDta, m_nDlc );                  { write data bytes             }
@@ -1493,8 +1503,6 @@ end;
 procedure MCP_CAN.mcp2515_read_canMsg(buffer_sidh_addr : INT8U);
 var
   mcp_addr, ctrl, premask : INT8U;
-  l : integer;
-  logstr : string;
 begin
   mcp_addr := buffer_sidh_addr;
 
@@ -1558,6 +1566,9 @@ begin
 
   FCanbusLock := SpinCreate;
 
+{$ifdef RPI}
+  SPIDevice:=PSPIDevice(DeviceFindByDescription(BCM2708_SPI0_DESCRIPTION));
+{$endif}
 {$ifdef ZERO}
   SPIDevice:=PSPIDevice(DeviceFindByDescription(BCM2708_SPI0_DESCRIPTION));
 {$endif}
@@ -1814,13 +1825,13 @@ end;
 function MCP_CAN.setMsg(id : INT32U; rtr : INT8U; ext : INT8U; len : INT8U; pData : PINT8U) : INT8U;
 var
   i : byte;
-  logstr : string;
 begin
   m_nID     := id;
   m_nRtr    := rtr;
   m_nExtFlg := ext;
   m_nDlc    := len;
-  for i := 0 to MAX_CHAR_IN_MESSAGE - 1 do
+//  for i := 0 to MAX_CHAR_IN_MESSAGE - 1 do
+  for i := 0 to len - 1 do
     m_nDta[i] := (pData+i)^;
 
   Result := MCP2515_OK;
