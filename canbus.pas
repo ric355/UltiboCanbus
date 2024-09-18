@@ -1582,6 +1582,9 @@ begin
   SPIDevice:=PSPIDevice(DeviceFindByDescription(BCM2710_SPI0_DESCRIPTION));
 {$endif}
 
+  // set the clock rate for this chip select.
+  SPIDeviceSetClockRate(SPIDevice, MCP_CS, 10000000);
+
   res := SPIDeviceStart(SPIDevice, SPI_MODE_4WIRE, 10000000,
               SPI_CLOCK_PHASE_LOW, SPI_CLOCK_POLARITY_LOW);
 
